@@ -1,0 +1,138 @@
+/* Fuente moderna y legible para educación */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+    /* Fondo marrón suave/crema, profesional y cálido */
+    background-color: #f4f1ee;
+    background-image: radial-gradient(#d8ccc0 0.5px, transparent 0.5px);
+    background-size: 20px 20px; /* Sutil patrón de puntos tipo cuaderno */
+    background-attachment: fixed;
+    
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #4a3728;
+}
+
+.contenedor {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 550px;
+    padding: 45px;
+    border-radius: 20px;
+    /* Sombra suave y natural */
+    box-shadow: 0 10px 25px rgba(74, 55, 40, 0.08);
+    box-sizing: border-box;
+    border: 1px solid #e8e2dc;
+}
+
+h2 {
+    text-align: center;
+    color: #5d4037;
+    margin-bottom: 35px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    position: relative;
+}
+
+/* Detalle decorativo debajo del título */
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #8d6e63;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.grupo {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #5d4037;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Estilo de los campos de entrada */
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1.5px solid #e0d6ce;
+    border-radius: 10px;
+    background-color: #fcfaf9;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #4a3728;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #a1887f;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(161, 136, 127, 0.1);
+}
+
+/* Mejora de los Select Múltiples */
+select[multiple] {
+    padding: 10px;
+    background-image: none;
+    line-height: 1.6;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Botón de envío - Estilo institucional */
+button {
+    width: 100%;
+    background-color: #6d4c41;
+    color: #ffffff;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #5d4037;
+    box-shadow: 0 4px 12px rgba(93, 64, 55, 0.2);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Placeholders más suaves */
+::placeholder {
+    color: #bcaaa4;
+    font-size: 0.9rem;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 25px;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+}

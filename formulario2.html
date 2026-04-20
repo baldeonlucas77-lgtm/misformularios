@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario del Estudiante</title>
+    <link rel="stylesheet" href="formulario2.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Formulario de Curso</h2>
+        <form action="https://formsubmit.co/eftol280472@gmail.com" method="post">
+            
+            <div class="grupo">
+                <label for="nombre">Nombre del Estudiante:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres" required>
+            </div>
+
+            <div class="grupo">
+                <label for="apellido">Apellidos:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese sus apellidos" required>
+            </div>
+
+            <div class="grupo">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej: +51 999..." required>
+            </div>
+            <div class="grupo">
+                <label for="horario">Seleccionar su Horario de Trabajo(Usa Ctrl/Cmd para varios):</label>
+                <select id="horaio" name="horario" multiple required size="3">
+                    <option value="Turno Mañana">Turno Mañana</option>
+                    <option value="Turno Tarde">Turno Tarde</option>
+                    <option value="Turno Noche">Turno Noche</option>
+                    </select>
+            </div>
+
+            <div class="grupo">
+                <label for="curso">Seleccionar su curso (Usa Ctrl/Cmd para varios):</label>
+                <select id="curso" name="curso" multiple required size="4">
+                    <option value="Curso python">Curso python</option>
+                    <option value="Curso Java">Curso Java</option> 
+                    <option value="Curso htmls">Curso htmls</option>
+                    <option value="Curso base de datos">Curso base de datos</option>
+                    </select>         
+            </div> 
+            <textarea id="Sugerencias" name="Sugerencias" placeholder="Ingrese su Sugerecia" rows="10"></textarea>
+
+            <button type="submit">Enviar Pedido</button>
+        </form> 
+    </div>   
+</body>
+</html>
